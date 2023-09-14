@@ -1,4 +1,4 @@
-import config from "./config";
+import config from "./config.js";
 
 const chatBoxToggler = document.querySelector(".chatbot-toggler");
 const closeBtn = document.querySelector(".close-btn");
@@ -63,7 +63,7 @@ const handleChat = () => {
   chatbox.scrollTo(0, chatbox.scrollHeight);
 
   setTimeout(() => {
-    incomingChatLi = createChatLi("Thinking...", "incoming");
+    const incomingChatLi = createChatLi("Thinking...", "incoming");
     chatbox.appendChild(incomingChatLi);
     chatbox.scrollTo(0, chatbox.scrollHeight);
     generateResponse(incomingChatLi);
