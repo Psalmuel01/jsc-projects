@@ -1,6 +1,6 @@
 // config.js
 const config = {
-  API_KEY: "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",
+  API_KEY: "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",
 };
 
 // Export the configuration
