@@ -1,4 +1,8 @@
-import config from "./config.js";
+// import config from "./config.js";
+// const config = {
+//   API_KEY: "apikey",
+// };
+// export default config;
 
 const chatBoxToggler = document.querySelector(".chatbot-toggler");
 const closeBtn = document.querySelector(".close-btn");
@@ -7,7 +11,7 @@ const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
 
 let userMessage = null;
-const API_KEY = config.API_KEY;
+const API_KEY = process.env.API_KEY;
 const inputInitHeight = chatInput.scrollHeight;
 
 const createChatLi = (message, className) => {
